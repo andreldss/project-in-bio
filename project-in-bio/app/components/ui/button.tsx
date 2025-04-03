@@ -1,3 +1,5 @@
+import { cn } from "@/app/lib/utils";
+
 export default function Button({
     children,
     ...props
@@ -6,8 +8,9 @@ export default function Button({
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
 
 
-    return(
-        <button {...props}>
+    return (
+        <button {...props}
+            className={cn()}>
             {children}
         </button>
     )
