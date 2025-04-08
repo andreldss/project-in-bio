@@ -1,6 +1,8 @@
 import TextInput from "../ui/text-input"
 import Button from "../ui/button"
 import UserCard from "../commons/user-card"
+import TotalVisits from "../commons/total-visits"
+import ProjectCard from "../commons/project-card"
 
 
 export default function Hero() {
@@ -25,13 +27,13 @@ export default function Hero() {
                 <div className="relative">
                     <UserCard />
                     <div className="absolute -bottom-[7%] -right-[45%]">
-
+                        <TotalVisits />
                     </div>
-                    <div className="absolute top[20%] -left-[45%] -z-10">
-
+                    <div className="absolute top-[20%] -left-[45%] -z-10">
+                        <ProjectCard />
                     </div>
-                    <div className="absolute -top[5%] -left-[55%] -z-10">
-                        
+                    <div className="absolute -top-[5%] -left-[55%] -z-10">
+                        <ProjectCard />
                     </div>
                 </div>
             </div>
